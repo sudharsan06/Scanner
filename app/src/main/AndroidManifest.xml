@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.veetech.hiremee.hm_qr_scanner">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- Last Added -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hm_circle"
+        android:label="HM Scanner"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity
+            android:name=".HallTicket.MainActivity"
+            android:label="HM Scanner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HallTicket.HallTicket_UserFindActivity"
+            android:label="Entry Verification"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.veetech.hiremee.hm_qr_scanner.HallTicket.MainActivity" />
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AppUtilities.InternetConnectivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HallTicket.HallTicketQRScanningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ScanSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HireMeeID.ExamCenterSelectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HireMeeID.HM_ID_QRScanningActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HireMeeID.HM_ID_UserFindActivity"
+            android:screenOrientation="portrait">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.veetech.hiremee.hm_qr_scanner.ScanSelectionActivity" />
+
+        </activity>
+    </application>
+
+</manifest>

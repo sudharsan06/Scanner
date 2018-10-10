@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/myswitch"
+        android:icon="@drawable/loading_small"
+        android:title="Sound"
+        app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item
+                android:id="@+id/sound_control"
+                android:title=""
+
+                app:showAsAction="ifRoom" />
+
+        <!--    <item
+                android:id="@+id/clipboard_control"
+                android:title="Enable Sound"
+                android:icon="@drawable/tick_one"
+                app:showAsAction="ifRoom" />
+-->
+        </menu>
+
+    </item>
+
+</menu>

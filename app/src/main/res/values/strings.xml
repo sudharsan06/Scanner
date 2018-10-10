@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">HM_QR_Scanner</string>
+    <array name="Scanning_type">
+        <item>-- Select assessment type ---</item>
+        <item>College campus assessment</item>
+        <item>Pooled campus assessment</item>
+    </array>
+
+    <array name="ExamCenters">
+        <item>-- Pooled campus --</item>
+        <item>Sona College of Technology</item>
+        <item>Thiyagaraja Polytechnic college</item>
+        <item>Dhiraj lal engineering college</item>
+        <item>Vysya College of Arts and science</item>
+        <item>AVS College</item>
+        <item>Sakthi kailash College</item>
+        <item>Govt Arts and Science College</item>
+        <item>Periyar University, Salem</item>
+        <item>Paavendhar Arts and Science College</item>
+        <item>Paavai Engineering College</item>
+        <item>Bharathiyar Arts and Science College</item>
+        <item>Muthayammal Engineering College</item>
+        <item>Venkateshwara Engineering College</item>
+        <item>Loyala College, Chennai</item>
+
+    </array>
+</resources>

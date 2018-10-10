@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_user_find"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.veetech.hiremee.hm_qr_scanner.HireMeeID.HM_ID_UserFindActivity">
+
+    <android.support.design.widget.CoordinatorLayout
+
+        android:id="@+id/coordinateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:src="@drawable/cancel_two"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_margin="8dp"
+            android:padding="1dp"
+            android:src="@drawable/candidate" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/primary_text"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_seekerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:text="Candidate not available"
+            android:textColor="@color/colorPrimaryDark"
+            android:visibility="visible" />
+
+        <!--    <com.spark.submitbutton.SubmitButton
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:text="Submit"
+                android:textColor="@color/gray"
+                app:sub_btn_background="@color/white"
+                app:sub_btn_duration="1500"
+                app:sub_btn_line_color="@color/green"
+                app:sub_btn_ripple_color="@color/green"
+                app:sub_btn_tick_color="@color/white" />-->
+
+
+        <TextView
+            android:id="@+id/tv_userID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="User Not Registered"
+            android:visibility="visible" />
+
+        <!--    <TextView
+                android:id="@+id/tv_userExam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:text="No Exam"
+                android:textSize="16sp"
+                android:visibility="visible" />-->
+
+
+        <com.dd.processbutton.iml.ActionProcessButton
+            android:id="@+id/btnSignIn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Assign Exam"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:visibility="visible"
+            custom:pb_colorComplete="@color/green_complete"
+            custom:pb_colorNormal="@color/blue_normal"
+            custom:pb_colorPressed="@color/blue_pressed"
+            custom:pb_colorProgress="@color/purple_progress"
+            custom:pb_textProgress="Mapping..." />
+
+
+        <!--
+                <Button
+                    android:id="@+id/btn_MapExam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/button_yellow"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="Assign Exam"
+                    android:textColor="@color/primary_text"
+                    android:visibility="visible"
+                     />-->
+
+
+        <TextView
+            android:id="@+id/tv_scan_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text=""
+            android:textColor="#927B51"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/tv_failure_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Please get in touch with HireMee support team"
+            android:textColor="@color/secondary_text"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
